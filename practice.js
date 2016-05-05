@@ -12,7 +12,7 @@ MongoClient.connect(url,function(error,db){
 
 		db.collection('docs')
 		.aggregate([
-				//{ $match : {name : 'shahrukh'}},
+				{ $match : {name : 'shahrukh'}},
 		
 		   { $project : {name:1,productid:1, _id:0}}
 		], {allowDiskUse: true}, (error, result) => {

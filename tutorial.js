@@ -22,7 +22,7 @@ const names = _(['shahrukh','otto','sai','daniel']);
 _(readStreams)
 // .reduce('', (memo, val) => memo += val)
 // .split()
-// .tap(console.log)
+.tap(console.log)
 //.collect()
 .map(JSON.parse)
 .flatten()
